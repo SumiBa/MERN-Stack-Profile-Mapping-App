@@ -33,29 +33,35 @@ This is a full-featured MERN (MongoDB, Express, React, Node.js) stack applicatio
 ```
 git clone https://github.com/SumiBa/MERN-Stack-Profile-Mapping-App.git
 cd MERN-Stack-Profile-Mapping-App
+```
 
 2. Setup the Backend
 ```
 cd backend
 npm install
+```
 
 Create an .env file
 ```
 PORT=5000
 MONGODB_URI=your-mongodb-atlas-uri
+```
 
 Run the backend server
 ```
 node index.js
+```
 
 3. Setup the Frontend
 ```
 cd ../frontend
 npm install
+```
 
 Start the development server
 ```
 npm run dev
+```
 
 🔑 Key Frontend Dependencies
 
