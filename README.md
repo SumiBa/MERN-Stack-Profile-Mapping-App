@@ -28,34 +28,61 @@ This is a full-featured MERN (MongoDB, Express, React, Node.js) stack applicatio
 ✅ MongoDB Atlas Integration: Profile data is stored remotely using MongoDB Atlas.
 
 
-📁 Project Structure
-
-MERN-Profile-Mapping-App/
-├── backend/
-│   ├── index.js                // Main Express server
-│   ├── .env                    // MongoDB URI & server config
-│   ├── uploads                    
-│   ├── models/
-│   │   └── Profile.js          // Mongoose schema
-│   └── routes/
-│       └── profileRoutes.js    // CRUD API endpoints
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/         // ProfileCard, Map, AdminPanel, etc.
-│   │   ├── App.jsx
-│   │   ├── index.css
-│   │   └── main.jsx
-│   ├── tailwind.config.js
-│   ├── vite.config.js
-│   └── package.json
-
-
 ⚙️ Getting Started
 1. Clone the repository
 ```
 git clone https://github.com/SumiBa/MERN-Stack-Profile-Mapping-App.git
 cd MERN-Stack-Profile-Mapping-App
 
+2. Setup the Backend
+```
+cd backend
+npm install
 
+Create an .env file
+```
+PORT=5000
+MONGODB_URI=your-mongodb-atlas-uri
+
+Run the backend server
+```
+node index.js
+
+3. Setup the Frontend
+```
+cd ../frontend
+npm install
+
+Start the development server
+```
+npm run dev
+
+🔑 Key Frontend Dependencies
+
+react and react-dom: Frontend UI
+vite: Fast dev server and build tool
+tailwindcss: Utility-first CSS framework
+leaflet and react-leaflet: Interactive maps
+react-toastify: Toast notifications
+axios: For API calls
+@vitejs/plugin-react: Vite React support
+
+🧩 Key Backend Dependencies
+
+express: Web server
+mongoose: MongoDB object modeling
+cors: Cross-origin resource sharing
+dotenv: Manage environment variables
+multer (if photo upload used): Handling form-data/image uploads
+
+🚀 How to Use
+
+View profiles: See all profiles on the home page.
+Search: Filter profiles based on keywords.
+Summary button: Opens an interactive map showing the profile's location.
+View Details: See additional profile info in a detailed view.
+Add Profile: Use the form to create a new profile.
+Edit/Delete: Modify or remove profiles via buttons.
+Admin Panel: All CRUD operations are handled here.
+Notifications: Real-time toasts for actions.
+Map Rendering: Map fetches location from address using OpenStreetMap geocoding.
