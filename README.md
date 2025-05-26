@@ -1,5 +1,6 @@
 🌍 MERN Stack Profile Mapping App
-This is a full-featured MERN (MongoDB, Express, React, Node.js) stack application that allows users to manage and explore a list of profiles with geographic mapping functionality. It is integrated with MongoDB Atlas for storing profile data and uses OpenStreetMap via Leaflet for displaying user locations on an interactive map.
+This is a full-featured MERN (MongoDB, Express, React, Node.js) stack application that allows users to manage and explore a list of profiles with geographic mapping functionality. It is integrated with MongoDB Atlas for storing profile data and uses OpenStreetMap via Leaflet for displaying user locations on an interactive ma
+
 
 🔥 Features
 ✅ View Profiles: List of profiles with name, photo, and description.
@@ -25,3 +26,36 @@ This is a full-featured MERN (MongoDB, Express, React, Node.js) stack applicatio
 ✅ Error Handling: Graceful handling of geocoding or API failures.
 
 ✅ MongoDB Atlas Integration: Profile data is stored remotely using MongoDB Atlas.
+
+
+📁 Project Structure
+
+MERN-Profile-Mapping-App/
+├── backend/
+│   ├── index.js                // Main Express server
+│   ├── .env                    // MongoDB URI & server config
+│   ├── uploads                    
+│   ├── models/
+│   │   └── Profile.js          // Mongoose schema
+│   └── routes/
+│       └── profileRoutes.js    // CRUD API endpoints
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/         // ProfileCard, Map, AdminPanel, etc.
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── package.json
+
+
+⚙️ Getting Started
+1. Clone the repository
+```
+git clone https://github.com/SumiBa/MERN-Stack-Profile-Mapping-App.git
+cd MERN-Stack-Profile-Mapping-App
+
+
