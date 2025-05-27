@@ -1,5 +1,5 @@
 🌍 MERN Stack Profile Mapping App
-This is a full-featured MERN (MongoDB, Express, React, Node.js) stack application that allows users to manage and explore a list of profiles with geographic mapping functionality. It is integrated with MongoDB Atlas for storing profile data and uses OpenStreetMap via Leaflet for displaying user locations on an interactive ma
+This is a full-featured MERN (MongoDB, Express, React, Node.js) stack application that allows users to manage and explore a list of profiles with geographic mapping functionality. It is integrated with MongoDB Atlas for storing profile data and uses OpenStreetMap via Leaflet for displaying user locations on an interactive map.
 
 
 🔥 Features
